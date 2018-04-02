@@ -1,5 +1,14 @@
+body {
+  background: lightblue;
+  text-align: center;
+}
+
 .wrapper{
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+img {
+  transform: translateY(-200px)
 }
