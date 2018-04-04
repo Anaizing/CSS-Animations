@@ -18,7 +18,7 @@ body {
   color: white;
   border-radius: 50px;
   cursor: pointer;
-  transition: 1s, transform 1s 1s ;
+  transition: 1s, transform 0.3s 0.3s ease-in ;
 }
 
 .circle:hover {
