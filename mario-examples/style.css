@@ -48,6 +48,7 @@ html, body{
   animation-duration: 3s; 
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .luigi {
@@ -59,6 +60,7 @@ html, body{
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-direction: reverse;
+  animation-timing-function: linear;
 }
 
 /*// KEYFRAMES //*/
