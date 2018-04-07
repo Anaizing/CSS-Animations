@@ -44,11 +44,8 @@ html, body{
   position: absolute;
   top: -40px;
   left: 0px;
-  animation-name: drive;
-  animation-duration: 3s; 
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: drive 3s linear infinite both,
+              jump 0.3s 1.2s  ease;
 }
 
 .luigi {
@@ -70,13 +67,34 @@ html, body{
   width: 200px;
   top: 120px;
   opacity: 0.6;
-  animation: wind 25s linear  infinite reverse both;
+  animation:  wind 25s linear  infinite reverse both;
 }
 
 .cloud:nth-child(2){
   width: 300px;
   top: 0;
   animation: wind 15s linear  infinite reverse both;
+}
+
+.tree {
+  position: absolute
+}
+
+
+
+.tree:nth-child(1) {
+  width: 250px;
+  top: -120px;
+  left: -100px;
+  z-index: 1;
+  animation: tree 5s linear  infinite reverse both;
+}
+
+.tree:nth-child(2) {
+  width: 100px;
+  top: -60px;
+  left: -100px;
+  animation: tree 6s linear  infinite reverse both;
 }
 
 /*// KEYFRAMES //*/
@@ -88,6 +106,17 @@ html, body{
  @keyframes wind {
    from{transform: translateX(-300px)}
    to{transform: translateX(800px)}
+ }
+
+ @keyframes jump {
+   0%{top: -40px}
+   50%{top: -60px}
+   100%{top: -40px}
+ }
+
+ @keyframes tree {
+   from{ transform: translateX(-300px)}
+   to{transform: translateX(1000px)}
  }
 
 
