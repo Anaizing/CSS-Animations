@@ -47,13 +47,13 @@ html, body{
   animation-name: drive;
   animation-duration: 3s; 
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 /*// KEYFRAMES //*/
  @keyframes drive {
-   from{ transform: translateX(50px)}
-   to{transform: translateX(500px)}
+   from{ transform: translateX(-200px)}
+   to{transform: translateX(800px)}
  }
 
 
