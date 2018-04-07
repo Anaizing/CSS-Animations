@@ -64,7 +64,9 @@ button{
 
 #pop-up{
   top: -400px;
-  animation: drop 0.5s ease forwards;
+  transform-origin: 10px 10px;
+  animation: drop 0.5s ease forwards,
+              swing 2s 2s ease;
 }
 
 @keyframes drop {
@@ -76,7 +78,8 @@ button{
 @keyframes swing {
   0%{transform: translateY(650px) rotateZ(0deg)}
   40%{transform: translateY(650px) rotateZ(90deg)}
-  70%{transform: translate(650px) rotateZ(70deg)}
+  70%{transform: translateY(650px) rotateZ(70deg)}
+  100%{transform: translateY(650px) rotate(75deg)}
 }
 
 
