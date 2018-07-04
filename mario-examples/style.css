@@ -32,7 +32,7 @@ html, body{
 
 .lines{
   box-sizing: border-box;
-  border: 5px dashed #fff;
+  border: 5px solid #fff;
   height: 0px;
   width: 100%;
   position: absolute;
@@ -114,12 +114,12 @@ html, body{
 /*// KEYFRAMES //*/
  @keyframes drive {
    from{ transform: translateX(-200px)}
-   to{transform: translateX(800px)}
+   to{transform: translateX(1400px)}
  }
 
  @keyframes wind {
    from{transform: translateX(-300px)}
-   to{transform: translateX(800px)}
+   to{transform: translateX(1400px)}
  }
 
  @keyframes jump {
@@ -130,7 +130,7 @@ html, body{
 
  @keyframes tree {
    from{ transform: translateX(-300px)}
-   to{transform: translateX(1000px)}
+   to{transform: translateX(1500px)}
  }
 
 
